@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.allinfinance.po.route.TblRouteMchtFnt" table="TBL_ROUTE_MCHT_FNT" schema="GTWYADM">
+        <composite-id mapped="true" class="com.allinfinance.po.route.TblRouteMchtFntPK">
+            <key-property name="mchtIdUp" column="MCHT_ID_UP"/>
+            <key-property name="termIdUp" column="TERM_ID_UP"/>
+        </composite-id>
+        <property name="mchtIdFnt" column="MCHT_ID_FNT"/>
+        <property name="termIdFnt" column="TERM_ID_FNT"/>
+        <property name="crtOpr" column="CRT_OPR"/>
+        <property name="crtTime" column="CRT_TIME"/>
+        <property name="updOpr" column="UPD_OPR"/>
+        <property name="updTime" column="UPD_TIME"/>
+    </class>
+</hibernate-mapping>
