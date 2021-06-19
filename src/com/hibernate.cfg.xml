@@ -4,9 +4,11 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url"/>
-    <property name="connection.driver_class"/>
-    <!-- <property name="connection.username"/> -->
+    <property name="connection.url">jdbc:oracle:thin:@192.168.1.41:1521:orcl</property>
+    <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+<!--      <mapping resource="TblSnFreezeWj.hbm.xml"/>-->
+<!--      <mapping resource="TblRegularIdentify.hbm.xml"/>-->
+      <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 
     <!-- DB schema will be updated if needed -->
